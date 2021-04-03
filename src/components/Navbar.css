@@ -1,0 +1,93 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(235, 226, 226);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar .logo {
+  cursor: pointer;
+  font-size: 40px;
+}
+.nav_link {
+  display: flex;
+  margin: 20px;
+  list-style: none;
+}
+.home,
+.about,
+.service,
+.project,
+.contact {
+  text-decoration: none;
+  padding: 0px 20px;
+  font-size: 20px;
+  color: black;
+}
+.active_class {
+  border-bottom: 3px solid #2bc778;
+}
+.navbar .btn {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  padding: 9px 30px;
+  background-color: #2bc778;
+  color: #fff;
+}
+.navbar .btn:hover {
+  background-color: rgb(250, 239, 239);
+  color: #2bc778;
+  border: 1px solid #2bc778;
+  transition: all 0.5s ease-in-out;
+}
+.mobile_menu_icon {
+  display: none;
+}
+/* --------------------------media query------------------ */
+@media screen and (max-width: 867px) {
+  .nav_link {
+    display: none;
+  }
+  .navbar .btn {
+    display: none;
+  }
+  .nav_link_mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: #2bc778;
+    top: 70px;
+    left: 0;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+  .home,
+  .about,
+  .service,
+  .project,
+  .contact {
+    padding: 30px;
+    width: 100%;
+    color: #fff;
+    transition: all 0.5s ease;
+    text-align: center;
+  }
+  .mobile_menu_icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    background-color:rgb(235, 226, 226);
+    outline: none;
+    border: none;
+    top: 15px;
+    right: 25px;
+  }
+}

@@ -1,0 +1,49 @@
+.service_card_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0rem 4rem;
+}
+.service_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid gray; */
+  border-radius: 2px;
+  margin: 1rem;
+  height: 43vh;
+  width: 55%;
+}
+.service_card:hover {
+  background-color: #2bc778;
+  color: #fff;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.service_card p {
+  padding: 0rem 0.5rem;
+}
+.service_icon {
+  font-size: 4rem;
+  color: rgb(235, 181, 172);
+  margin: 1.5rem;
+}
+/* -----------------media query------------------ */
+@media screen and (max-width: 1000px) {
+  .service_card_section {
+    display: block;
+  }
+  .service_card {
+    margin: 0rem;
+    height: 40vh;
+    width: 100%;
+  }
+  .service_card p {
+    padding: 0rem 0rem;
+  }
+  .service_icon {
+    margin: 1rem;
+  }
+}

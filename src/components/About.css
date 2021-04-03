@@ -1,0 +1,248 @@
+.about_header {
+  background-color: #2bc778;
+  height: 50vh;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  align-items: center;
+  color: #fff;
+  font-size: 3rem;
+}
+.main .divider {
+  width: 10%;
+}
+@media screen and (max-width: 500px) {
+  .main {
+    font-size: 1.5rem;
+  }
+}
+/* -----------------------development section-------------- */
+.development_section {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+.develo_image img {
+  height: 48vh;
+  margin: 4rem 0rem;
+}
+.develo_image img:hover {
+  transform: scale(0.9);
+  transition: all 0.4s ease-in-out;
+}
+.develo_text {
+  margin: 1rem;
+}
+.develo_text h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+.develo_text p {
+  padding: 1rem 0rem;
+}
+.develo_text .project {
+  display: flex;
+}
+.develo_text .project h2 {
+  font-size: 2rem;
+  color: #ee6c5b;
+}
+/* ------------------media query------------------- */
+@media screen and (max-width: 1270px) {
+  .development_section {
+    display: block;
+    justify-content: center;
+    margin: 0rem;
+  }
+  .develo_image img {
+    height: 55vh;
+    width: 100%;
+    margin: 3rem 0rem;
+  }
+  .develo_text .project {
+    display: block;
+  }
+  .develo_text .project h2 {
+    font-size: 1rem;
+  }
+}
+/* ---------------------tools section---------------- */
+.tools {
+  margin: 7rem 0rem;
+}
+.tools h4 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2bc778;
+}
+.tools h1 {
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+.tools_card_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem;
+}
+.tools_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f27e19;
+  height: 60vh;
+  margin: 1rem;
+  padding: 1rem;
+}
+.tools_card h3 {
+  font-size: 2rem;
+}
+.tools_card:hover {
+  background-color: #f27e19;
+  color: #fff;
+}
+.tools_icon {
+  font-size: 4rem;
+  color: #f8cba4;
+  margin: 1rem;
+}
+/* -------------media query---------- */
+@media screen and (max-width: 1000px) {
+  .tools_card_div {
+    display: block;
+  }
+  .tools_card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tools_card h3 {
+    font-size: 1.5rem;
+  }
+  .tools_icon {
+    font-size: 3rem;
+    margin: 0rem;
+  }
+  .tools h1 {
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+}
+/* -----------------team_section---------------- */
+.team_section {
+  background-color: #f5f5ff;
+}
+.team_section h4 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2bc778;
+}
+.team_section h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.team_card_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+}
+.team_card {
+  margin: 1rem;
+}
+.team_card img {
+  height: 40vh;
+}
+.team_card img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+.team_card h3 {
+  font-size: 2rem;
+  color: #2bc778;
+}
+.team_card p {
+  font-size: 1.2rem;
+}
+.team_card .team_icon {
+  font-size: 2.1rem;
+  color: #f272bc;
+  padding: 0.5rem;
+  margin: 0.3rem;
+  border: 2px solid #f272bc;
+  border-radius: 50%;
+}
+.team_card .team_icon:hover {
+  background-color: #f272bc;
+  color: #fff;
+}
+/* ------------------media query----------------- */
+@media screen and (max-width: 1100px) {
+  .team_card_div {
+    display: block;
+  }
+  .team_card img {
+    height: 55vh;
+    width: 100%;
+  }
+}
+/* ---------------------update section---------------- */
+.update_section {
+  background: url(../images/partner1.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3rem;
+  height: 67vh;
+}
+.main_text {
+  background: rgba(0, 0, 0, 0.5);
+  height: 67vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main_text h4 {
+  font-size: 2rem;
+  color: rgb(236, 228, 228);
+}
+.main_text h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+.main_text input {
+  border: none;
+  outline: none;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.7);
+  width: 70%;
+  height: 63px;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  margin-top: 2rem;
+}
+/* ----------------media query--------------- */
+@media screen and (max-width: 850px) {
+  .main_text input {
+    width: 100%;
+    margin-top: 0rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main_text h4 {
+    font-size: 1rem;
+  }
+  .main_text h1 {
+    font-size: 2rem;
+  }
+}

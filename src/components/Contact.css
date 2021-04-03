@@ -1,0 +1,126 @@
+.contact_section {
+  margin: 3rem;
+}
+.contact_card_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_card {
+  width: 30%;
+  height: 30vh;
+  margin: 1rem;
+  padding: 1rem 3rem;
+  box-shadow: 5px 25px 25px -5px rgba(0, 0, 0, 0.5);
+}
+.contact_card h3 {
+  font-size: 1.5rem;
+}
+.contact_icon {
+  font-size: 3rem;
+  color: #2bc778;
+}
+.contact_card:hover {
+  transform: scale(0.9);
+  transition: all 0.5s ease;
+}
+/* -------------------media query---------- */
+@media screen and (max-width: 950px) {
+  .contact_card_div {
+    display: block;
+  }
+  .contact_card {
+    width: 100%;
+  }
+}
+/* -----------------------info section---------- */
+.info_section {
+  margin: 7rem 3rem;
+}
+.info_section h1 {
+  text-align: center;
+  font-size: 4.5rem;
+  text-decoration: underline;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.form input {
+  width: 50%;
+  padding: 1rem;
+  margin: 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #2bc778;
+  font-size: 1.5rem;
+}
+.form input:hover {
+  transform: scale(1.1);
+  transition: all 0.6s ease;
+  border-bottom: 4px solid #2bc778;
+}
+.form p {
+  padding: 0rem 1rem;
+  margin: 0rem 1rem;
+}
+.form textarea {
+  width: 50%;
+  padding: 1rem;
+  margin: 1.5rem 1rem;
+  border: 1px solid #2bc778;
+  outline: none;
+  font-size: 1.5rem;
+}
+.form textarea:hover {
+  border: none;
+  border-bottom: 4px solid #2bc778;
+  transition: all 0.6s ease;
+  transform: scale(1.1);
+}
+.info_section .contact_btn {
+  background-color: #2bc778;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 14%;
+  color: #fff;
+  height: 7.8vh;
+  border-radius: 30px;
+}
+.info_section .contact_btn:hover {
+  background-color: white;
+  border: 1px solid #2bc778;
+  color: #2bc778;
+  transition: all 0.5s ease;
+}
+/* ------------------media query---------------  */
+@media screen and (max-width: 1024px) {
+  .info_section .contact_btn {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .form input {
+    width: 100%;
+    padding: 1rem 0rem;
+    margin: 1rem 0rem;
+  }
+  .form textarea {
+    width: 100%;
+    padding: 1rem 0rem;
+    margin: 1.5rem 0rem;
+  }
+  .info_section .contact_btn {
+    width: 100%;
+    border-radius: 50px;
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;
+  }
+  .form p {
+    padding: 0rem 0rem;
+    margin: 0rem 0rem;
+  }
+}
